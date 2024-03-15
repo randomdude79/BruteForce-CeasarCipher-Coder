@@ -5,7 +5,7 @@ def main():
     result = ''
     initialInput = input('Would you like to encrypt, decrypt, or brute force decrypt?\n')
 
-    if initialInput == 'encrypt':
+    if initialInput == 'encrypt' or initialInput == 'e':
         text = input('Enter text to encrypt:\n')
         key = int(input('Enter key:\n'))
         result = ''
@@ -20,7 +20,7 @@ def main():
         print()
         main()
 
-    elif initialInput == 'decrypt':
+    elif initialInput == 'decrypt' or initialInput == 'd':
         text = input('Enter text to decrypt\n')
         key = int(input('Enter key:\n'))
         result = ''
